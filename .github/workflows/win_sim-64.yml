@@ -1,4 +1,4 @@
-name: Windows Companion 64-bit
+name: Windows Simulator 64-bit
 
 on:
   push:
@@ -7,17 +7,17 @@ on:
     tags:
       - v*
     paths:
-      - '.github/workflows/win_cpn-64.yml'
-      - 'companion/**'
-      - 'tools/build-companion.sh'
+      - '.github/workflows/win_sim-64.yml'
+      - 'simulator/**'
+      - 'tools/build-simulator.sh'
 
   pull_request:
     branches:
       - 'main'
     paths:
-      - '.github/workflows/win_cpn-64.yml'
-      - 'companion/**'
-      - 'tools/build-companion.sh'
+      - '.github/workflows/win_sim-64.yml'
+      - 'simulator/**'
+      - 'tools/build-simulator.sh'
 
   workflow_dispatch:
 
