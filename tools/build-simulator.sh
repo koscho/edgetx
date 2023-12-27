@@ -190,13 +190,13 @@ do
 done                              
 
 cmake --build . --target native-configure
-if [ "$(uname)" = "Darwin" ]; then
-    cmake --build native -j"${JOBS}" --target package
-    cp native/*.dmg "${OUTDIR}"
-elif [ "$(uname)" = "Linux" ]; then
-    cmake --build native -j"${JOBS}" --target package
-    cp native/*.AppImage "${OUTDIR}"
-else
-    cmake --build native --target installer
-    cp native/simulator/*.exe "${OUTDIR}"
-fi
+#if [ "$(uname)" = "Darwin" ]; then
+#    cmake --build native -j"${JOBS}" --target package
+#    cp native/*.dmg "${OUTDIR}"
+#elif [ "$(uname)" = "Linux" ]; then
+#    cmake --build native -j"${JOBS}" --target package
+#    cp native/*.AppImage "${OUTDIR}"
+#else
+#    cmake --build native --target installer
+#    cp native/simulator/*.exe "${OUTDIR}"
+#fi
