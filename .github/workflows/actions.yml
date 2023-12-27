@@ -1,39 +1,39 @@
 ---
 name: Run tests and package firmware
-on:
-  push:
-    branches:
-      - 'main'
-    tags:
-      - v*
-    paths-ignore:
-      - '**.md'
-      - '.github/ISSUE_TEMPLATE/**'
-      - '.github/workflows/nightly.yml'
-      - '.github/workflows/linux_cpn.yml'
-      - '.github/workflows/macosx_cpn.yml'
-      - '.github/workflows/win-cpn-32.yml'
-      - '.github/workflows/win_cpn-64.yml'
-      - 'companion/**'
-      - '.gitpod.yml'
-      - '.devcontainer/**'
-      - 'fw.json'
-  pull_request:
-    branches:
-      - 'main'
-    paths-ignore:
-      - '**.md'
-      - '.github/ISSUE_TEMPLATE/**'
-      - '.github/workflows/nightly.yml'
-      - '.github/workflows/linux_cpn.yml'
-      - '.github/workflows/macosx_cpn.yml'
-      - '.github/workflows/win-cpn-32.yml'
-      - '.github/workflows/win_cpn-64.yml'
-      - 'companion/**'
-      - '.gitpod.yml'
-      - '.devcontainer/**'
-      - 'fw.json'
-  workflow_dispatch:
+#on:
+#  push:
+#    branches:
+#      - 'main'
+#    tags:
+#      - v*
+#    paths-ignore:
+#      - '**.md'
+#      - '.github/ISSUE_TEMPLATE/**'
+#      - '.github/workflows/nightly.yml'
+#      - '.github/workflows/linux_cpn.yml'
+#      - '.github/workflows/macosx_cpn.yml'
+#      - '.github/workflows/win-cpn-32.yml'
+#      - '.github/workflows/win_cpn-64.yml'
+#      - 'companion/**'
+#      - '.gitpod.yml'
+#      - '.devcontainer/**'
+#      - 'fw.json'
+#  pull_request:
+#    branches:
+#      - 'main'
+#    paths-ignore:
+#      - '**.md'
+#      - '.github/ISSUE_TEMPLATE/**'
+#      - '.github/workflows/nightly.yml'
+#      - '.github/workflows/linux_cpn.yml'
+#      - '.github/workflows/macosx_cpn.yml'
+#      - '.github/workflows/win-cpn-32.yml'
+#      - '.github/workflows/win_cpn-64.yml'
+#      - 'companion/**'
+#      - '.gitpod.yml'
+#      - '.devcontainer/**'
+#      - 'fw.json'
+#  workflow_dispatch:
 
 jobs:
   test:
