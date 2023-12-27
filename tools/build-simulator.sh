@@ -198,6 +198,6 @@ elif [ "$(uname)" = "Linux" ]; then
 #    cp native/*.AppImage "${OUTDIR}"
 else
     cmake --build native --target installer
-    cp native/simulator/*.exe "${OUTDIR}"
+    # cp native/simulator/*.exe "${OUTDIR}"
     cp native/*.exe "${OUTDIR}"
 fi
