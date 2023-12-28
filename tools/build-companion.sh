@@ -63,16 +63,17 @@ rm -rf build
 mkdir build
 cd build
 
-declare -a simulator_plugins=(x9lite x9lites
-                              x7 x7-access
-                              t8 t12 tx12 tx12mk2
-                              zorro commando8 boxer
-                              tlite tpro lr3pro
-                              x9d x9dp x9dp2019 x9e
-                              xlite xlites
-                              nv14 pl18 pl18ev
-                              x10 x10-access x12s
-                              t16 t18 tx16s)
+#declare -a simulator_plugins=(x9lite x9lites
+#                              x7 x7-access
+#                              t8 t12 tx12 tx12mk2
+#                              zorro commando8 boxer
+#                              tlite tpro lr3pro
+#                              x9d x9dp x9dp2019 x9e
+#                              xlite xlites
+#                              nv14 pl18 pl18ev
+#                              x10 x10-access x12s
+#                              t16 t18 tx16s)
+declare -a simulator_plugins=(pocket)
 
 for plugin in "${simulator_plugins[@]}"
 do
